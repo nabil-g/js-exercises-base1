@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Untitled</title>
+    <script type="text/javascript">
+      function demander() {
+        var prenom = prompt('Veuillez saisir votre prénom');
+
+        if(isNaN(prenom)){
+          alert('Bonjour '+ prenom + " !");
+        }
+        else{
+          alert("Vous devez entrer du texte !");
+          demander();
+        }
+      }
+
+      demander();
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
